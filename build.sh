@@ -23,7 +23,7 @@ PATH="$PATH:$(go env GOPATH)/bin"
 	--go-grpc_out=servicepb \
 	--go-grpc_opt=paths=source_relative \
 	--proto_path=. \
-	--proto_path=servicepb \
+	--proto_path=./protobuf-shared \
 	--proto_path=/usr/local/include \
 	service.proto)
 
