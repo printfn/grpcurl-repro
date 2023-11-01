@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package sharedpb;
+
+option go_package = "github.com/printfn/grpcurl-repro/protobuf-shared/sharedpb";
+
+message HelloWorldResponse {
+    string result = 1;
+}

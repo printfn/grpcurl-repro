@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package servicepb;
+
+option go_package = "github.com/printfn/grpcurl-repro/protobuf-service/servicepb";
+
+import "protobuf-shared/message.proto";
+import "google/protobuf/empty.proto";
+
+service TestService {
+	rpc GetHelloWorld (google.protobuf.Empty) returns (sharedpb.HelloWorldResponse) {}
+}
