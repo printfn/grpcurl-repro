@@ -4,7 +4,7 @@ package servicepb;
 
 option go_package = "github.com/printfn/grpcurl-repro/protobuf-service/servicepb";
 
-import "message.proto";
+import "protobuf-shared/message.proto";
 import "google/protobuf/empty.proto";
 
 service TestService {
